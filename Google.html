@@ -2,68 +2,14 @@
 <html lang="en">
 <head>
     <title>Google</title>
-    <style>
-        body{
-            text-align: center;
-        }
-        .logoArea{
-            margin-top: 47px;
-            height: 233px;
-        }
-        .logoArea-logo{
-            padding-top: 109px;
-            height: 92px;
-            width: 272px;
-        }
-        .searchArea{
-            display: flex;
-            justify-content: space-between;
-            border: 1px solid #dfe1e5;
-            box-shadow: none;
-            border-radius: 24px;
-            z-index: 3;
-            height: 44px;
-            margin: 0 auto;
-            width: 482px;
-        }
-        .searchArea-searchlogo{
-            color: #9aa0a6;
-            height: 20px;
-            width: 20px;
-            margin-top: 3px;
-            display: inline-block;
-            fill: currentColor;
-            line-height: 24px;
-            position: relative;
-
-        }
-        .searchArea-input{
-            background-color: transparent;
-            border: none;
-            margin: 0;
-            padding: 0;
-            outline: none;
-            display: flex;
-            flex: 100%;
-            -webkit-tap-highlight-color: transparent;
-        }
-        .searchArea-voicelogo{
-            background:url('//www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
-            height:24px;
-            width:24px;
-            background-size:24px;
-            vertical-align:middle;
-            background-size:20px 20px;height:20px;width:16px;
-        }
-        
-        
-    </style>
+    <link rel="stylesheet" type="text/css" href="Google.css">
 </head>
 <body>
-    <!--实现下拉菜单，也可以尝试Dota1的界面，用flexbox-->
+    
     <div class="logoArea" >
         <img class="logoArea-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
+
     <div class="searchArea">
         <span class="searchArea-searchlogo">
             <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -71,7 +17,32 @@
             </svg>
         </span>
         <input class="searchArea-input">
-        <span class="searchArea-voicelogo"></span>
+        <span class="searchArea-voicelogo" aria-label="Voice Search"></span>
     </div>
+
+    <!--The drop-down search history list-->
+    <div jscontroller="searchHistory" class="searchHistory" style jsname="searchHistory" 
+    jsaction="mouseout: ;mouseleave: ;">
+        <div class="searchHistory-dropdown">
+            <div class="searchHistory-dropdownArea-list">
+
+            </div>
+            <div class="searchHistory-dropdownArea-buttons">
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="buttonArea">
+        <span>
+            <input class="buttonArea-button" value="Google Search" type="submit"></input>
+        </span>
+        <span>
+            <input class="buttonArea-button" value="I'm Feeling Lucky" type="submit"></input>
+        </span>
+    </div>
+
+
 </body>
 </html>

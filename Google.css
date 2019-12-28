@@ -1,0 +1,105 @@
+body{
+    text-align: center;
+    height: 100%;
+}
+
+.logoArea{
+    margin-top: 89px;
+    height: 233px;
+    max-height: 768px;
+}
+
+.logoArea-logo{
+    padding-top: 109px;
+    height: 92px;
+    width: 272px;
+}
+
+.searchArea:hover,.searchArea{
+    box-shadow: 
+        0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.searchArea{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 44px;
+    margin: 0 auto;
+    width:  584px;
+}
+
+.searchArea-searchlogo{
+    color: #9aa0a6;
+    height: 24px;
+    width: 24px;
+    margin-top: 12px;
+    margin-right: 14px;
+    margin-left: 14px;
+    display: inline-block;
+    fill: currentColor;
+    line-height: 24px;
+    position: relative;
+}
+
+.searchArea-input{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.searchArea-voicelogo{
+    background:url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+    height:24px;
+    width:24px;
+    background-size:24px;
+    margin-top: 10px;
+    margin-right: 14px;
+    margin-left: 10px;
+}
+
+.buttonArea{
+    width: 571px;
+    height: 70px;
+    padding-top: 18px;
+    top: 53px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.buttonArea-button:hover,.buttonArea-button{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+.buttonArea-button{
+    background-color: #f2f2f2;
+    text-align: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
