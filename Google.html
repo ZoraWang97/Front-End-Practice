@@ -3,36 +3,87 @@
 <head>
     <title>Google</title>
     <link rel="stylesheet" type="text/css" href="Google.css">
+    
 </head>
+
 <body>
     
     <div class="logoArea" >
         <img class="logoArea-logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
 
-    <div class="searchArea">
-        <span class="searchArea-searchlogo">
-            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-            </svg>
-        </span>
-        <input class="searchArea-input">
-        <span class="searchArea-voicelogo" aria-label="Voice Search"></span>
-    </div>
 
-    <!--The drop-down search history list-->
-    <div jscontroller="searchHistory" class="searchHistory" style jsname="searchHistory" 
-    jsaction="mouseout: ;mouseleave: ;">
-        <div class="searchHistory-dropdown">
-            <div class="searchHistory-dropdownArea-list">
 
-            </div>
-            <div class="searchHistory-dropdownArea-buttons">
+    <div class="searchFrame">
 
-            </div>
+        <div class="searchArea-up">
+            <span class="searchArea-searchlogo">
+                <svg id="searchLogo" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                </svg>
+            </span>
+            <input class="searchArea-input">
+            <span class="searchArea-voicelogo" aria-label="Voice Search"></span>
         </div>
-
+        
+        <div class="searchArea-history">
+            <div class="breakLine"></div>
+            <ul> 
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Kawasaki</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Is Ninja 400 suitable for beginner riders</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Motorcycle Protection Gear</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">frame slider</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Hands-on Kawasaki</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Insurance</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">JavaScript</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Most frequently asked question in behaviour interview</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Front-end developer position</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+                <li class="searchHistory-records">
+                    <span class="searchHistory-sign"></span>
+                    <span class="searchHistory-text">Full-stack developer position</span>
+                    <span class="searchHistory-remove"></span>
+                </li>
+            </ul>
+        </div>
+        
     </div>
+
 
     <div class="buttonArea">
         <span>
@@ -42,7 +93,9 @@
             <input class="buttonArea-button" value="I'm Feeling Lucky" type="submit"></input>
         </span>
     </div>
-
+    
 
 </body>
+
+<script src="DropDownMenu.js"></script>
 </html>
